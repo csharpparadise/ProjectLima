@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LimaDb", "LimaDb\LimaDb.sqlproj", "{CEC717B4-F544-432E-BACF-15DD8AC102E5}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Lima.Db", "LimaDb\Lima.Db.sqlproj", "{CEC717B4-F544-432E-BACF-15DD8AC102E5}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LimaDb", "LimaDb\LimaDb.sqlproj", "{4A0E4989-DF21-4617-8B78-71E2A8FD5F0D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lima.Core", "Lima.Core\Lima.Core.csproj", "{D217E226-1EB9-4BF5-AA69-389C943B4D87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lima.Api", "Lima.api\Lima.Api.csproj", "{C2D34164-AA1D-46C1-A19D-0DDC43A8F46C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lima.Api", "Lima.Api\Lima.Api.csproj", "{C2D34164-AA1D-46C1-A19D-0DDC43A8F46C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
