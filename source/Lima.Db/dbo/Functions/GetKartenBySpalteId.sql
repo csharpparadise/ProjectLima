@@ -1,4 +1,4 @@
-﻿CREATE FUNCTION [dbo].[GetKartenBySpaltenId]
+﻿CREATE FUNCTION [dbo].[GetKartenBySpalteId]
 (@spalteId int)
 RETURNS TABLE
 AS
