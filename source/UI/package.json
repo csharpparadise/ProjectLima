@@ -1,0 +1,11 @@
+{
+  "name": "Lima",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "~4.12.3"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "nodemon server.js"
+  }
+}
