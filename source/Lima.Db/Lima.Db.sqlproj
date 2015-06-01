@@ -58,6 +58,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="dbo" />
+    <Folder Include="dbo\Functions" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="DbDeployment.sql" />
@@ -66,6 +67,8 @@
     <Build Include="dbo\Board.sql" />
     <Build Include="dbo\Spalte.sql" />
     <Build Include="dbo\Karte.sql" />
+    <Build Include="dbo\Functions\GetAlleSpalten.sql" />
+    <Build Include="dbo\Functions\GetKartenBySpalteId.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.xml" />
