@@ -7,7 +7,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LimaDb", "LimaDb\LimaDb.sql
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lima.Core", "Lima.Core\Lima.Core.csproj", "{D217E226-1EB9-4BF5-AA69-389C943B4D87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lima.api", "Lima.api\Lima.api.csproj", "{C2D34164-AA1D-46C1-A19D-0DDC43A8F46C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lima.Api", "Lima.api\Lima.Api.csproj", "{C2D34164-AA1D-46C1-A19D-0DDC43A8F46C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
