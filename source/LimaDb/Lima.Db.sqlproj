@@ -61,4 +61,7 @@
   <ItemGroup>
     <PostDeploy Include="DbDeployment.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Local.publish.xml" />
+  </ItemGroup>
 </Project>
