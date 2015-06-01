@@ -26,7 +26,7 @@ namespace Lima.Data
 {
     // Board
     [GeneratedCodeAttribute("EF.Reverse.POCO.Generator", "2.13.1.0")]
-    public class Board
+    public partial class Board
     {
         public int Id { get; set; } // Id (Primary key)
 
@@ -36,7 +36,10 @@ namespace Lima.Data
         public Board()
         {
             Spaltes = new List<Spalte>();
+            InitializePartial();
         }
+
+        partial void InitializePartial();
     }
 
 }

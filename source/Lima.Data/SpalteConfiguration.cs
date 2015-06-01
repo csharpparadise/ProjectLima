@@ -25,7 +25,7 @@ using DatabaseGeneratedOption = System.ComponentModel.DataAnnotations.Schema.Dat
 namespace Lima.Data
 {
     // Spalte
-    internal class SpalteConfiguration : EntityTypeConfiguration<Spalte>
+    internal partial class SpalteConfiguration : EntityTypeConfiguration<Spalte>
     {
         public SpalteConfiguration(string schema = "dbo")
         {
@@ -38,7 +38,9 @@ namespace Lima.Data
 
             // Foreign keys
             HasOptional(a => a.Board).WithMany(b => b.Spaltes).HasForeignKey(c => c.BoardId); // FK__Spalte__BoardId__15502E78
+            InitializePartial();
         }
+        partial void InitializePartial();
     }
 
 }

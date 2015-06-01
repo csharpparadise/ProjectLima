@@ -26,7 +26,7 @@ namespace Lima.Data
 {
     // Spalte
     [GeneratedCodeAttribute("EF.Reverse.POCO.Generator", "2.13.1.0")]
-    public class Spalte
+    public partial class Spalte
     {
         public int Id { get; set; } // Id (Primary key)
         public string Titel { get; set; } // Titel
@@ -41,7 +41,10 @@ namespace Lima.Data
         public Spalte()
         {
             Kartes = new List<Karte>();
+            InitializePartial();
         }
+
+        partial void InitializePartial();
     }
 
 }

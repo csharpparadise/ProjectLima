@@ -25,7 +25,7 @@ using DatabaseGeneratedOption = System.ComponentModel.DataAnnotations.Schema.Dat
 namespace Lima.Data
 {
     // Karte
-    internal class KarteConfiguration : EntityTypeConfiguration<Karte>
+    internal partial class KarteConfiguration : EntityTypeConfiguration<Karte>
     {
         public KarteConfiguration(string schema = "dbo")
         {
@@ -39,7 +39,9 @@ namespace Lima.Data
 
             // Foreign keys
             HasOptional(a => a.Spalte).WithMany(b => b.Kartes).HasForeignKey(c => c.SpalteId); // FK__Karte__SpalteId__145C0A3F
+            InitializePartial();
         }
+        partial void InitializePartial();
     }
 
 }

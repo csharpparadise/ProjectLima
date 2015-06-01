@@ -25,7 +25,7 @@ using DatabaseGeneratedOption = System.ComponentModel.DataAnnotations.Schema.Dat
 namespace Lima.Data
 {
     // Board
-    internal class BoardConfiguration : EntityTypeConfiguration<Board>
+    internal partial class BoardConfiguration : EntityTypeConfiguration<Board>
     {
         public BoardConfiguration(string schema = "dbo")
         {
@@ -33,7 +33,9 @@ namespace Lima.Data
             HasKey(x => x.Id);
 
             Property(x => x.Id).HasColumnName("Id").IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            InitializePartial();
         }
+        partial void InitializePartial();
     }
 
 }

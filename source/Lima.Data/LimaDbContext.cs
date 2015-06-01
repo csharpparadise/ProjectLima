@@ -24,7 +24,7 @@ using DatabaseGeneratedOption = System.ComponentModel.DataAnnotations.Schema.Dat
 
 namespace Lima.Data
 {
-    public class LimaDbContext : DbContext, ILimaDbContext
+    public partial class LimaDbContext : DbContext, ILimaDbContext
     {
         public IDbSet<Board> Boards { get; set; } // Board
         public IDbSet<Karte> Kartes { get; set; } // Karte
@@ -38,14 +38,17 @@ namespace Lima.Data
         public LimaDbContext()
             : base("Name=LimaDbContext")
         {
+            InitializePartial();
         }
 
         public LimaDbContext(string connectionString) : base(connectionString)
         {
+            InitializePartial();
         }
 
         public LimaDbContext(string connectionString, System.Data.Entity.Infrastructure.DbCompiledModel model) : base(connectionString, model)
         {
+            InitializePartial();
         }
 
         protected override void Dispose(bool disposing)
@@ -60,6 +63,8 @@ namespace Lima.Data
             modelBuilder.Configurations.Add(new BoardConfiguration());
             modelBuilder.Configurations.Add(new KarteConfiguration());
             modelBuilder.Configurations.Add(new SpalteConfiguration());
+
+            OnModelCreatingPartial(modelBuilder);
         }
 
         public static DbModelBuilder CreateModel(DbModelBuilder modelBuilder, string schema)
@@ -69,6 +74,9 @@ namespace Lima.Data
             modelBuilder.Configurations.Add(new SpalteConfiguration(schema));
             return modelBuilder;
         }
+
+        partial void InitializePartial();
+        partial void OnModelCreatingPartial(DbModelBuilder modelBuilder);
         
         // Stored Procedures
     }

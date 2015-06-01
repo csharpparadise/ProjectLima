@@ -25,7 +25,7 @@ using DatabaseGeneratedOption = System.ComponentModel.DataAnnotations.Schema.Dat
 namespace Lima.Data
 {
     // Karte
-    public class Karte
+    public partial class Karte
     {
         public int Id { get; set; } // Id (Primary key)
         public string Titel { get; set; } // Titel

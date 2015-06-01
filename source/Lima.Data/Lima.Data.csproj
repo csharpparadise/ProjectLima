@@ -59,6 +59,7 @@
     <Compile Include="FakeLimaDbContext.cs">
       <DependentUpon>LimaDb.tt</DependentUpon>
     </Compile>
+    <Compile Include="IFunctionContext.cs" />
     <Compile Include="ILimaDbContext.cs">
       <DependentUpon>LimaDb.tt</DependentUpon>
     </Compile>
