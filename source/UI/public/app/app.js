@@ -1,6 +1,7 @@
 angular.module('lima', [
   'ngMaterial',
-  'spalte'
+  'spalte',
+  'karte'
 ]).config(init);
 
 init.$inject = ["$mdThemingProvider"];
