@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Web;
+﻿using System.Web;
 using System.Web.Http;
-using System.Web.Routing;
+using Lima.api;
 
-namespace Lima.api
+namespace Lima.Api
 {
-    public class WebApiApplication : System.Web.HttpApplication
+    public class WebApiApplication : HttpApplication
     {
         protected void Application_Start()
         {
