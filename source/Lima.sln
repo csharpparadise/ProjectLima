@@ -3,17 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comparex.Lima.Api", "Comparex.Lima.Api\Comparex.Lima.Api.csproj", "{73D25EFE-5DC8-4F2C-A8FD-189B206C0FCD}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Lima.Db", "LimaDb\Lima.Db.sqlproj", "{CEC717B4-F544-432E-BACF-15DD8AC102E5}"
-=======
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LimaDb", "LimaDb\LimaDb.sqlproj", "{CEC717B4-F544-432E-BACF-15DD8AC102E5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lima.Core", "Lima.Core\Lima.Core.csproj", "{D217E226-1EB9-4BF5-AA69-389C943B4D87}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lima.api", "Lima.api\Lima.api.csproj", "{C2D34164-AA1D-46C1-A19D-0DDC43A8F46C}"
->>>>>>> 3dfb1289c0537ab2714eeca0a080eb8e49fd9d98
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,30 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-<<<<<<< HEAD
 		{73D25EFE-5DC8-4F2C-A8FD-189B206C0FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{73D25EFE-5DC8-4F2C-A8FD-189B206C0FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73D25EFE-5DC8-4F2C-A8FD-189B206C0FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73D25EFE-5DC8-4F2C-A8FD-189B206C0FCD}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
->>>>>>> 3dfb1289c0537ab2714eeca0a080eb8e49fd9d98
 		{CEC717B4-F544-432E-BACF-15DD8AC102E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CEC717B4-F544-432E-BACF-15DD8AC102E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEC717B4-F544-432E-BACF-15DD8AC102E5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{CEC717B4-F544-432E-BACF-15DD8AC102E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEC717B4-F544-432E-BACF-15DD8AC102E5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CEC717B4-F544-432E-BACF-15DD8AC102E5}.Release|Any CPU.Deploy.0 = Release|Any CPU
-<<<<<<< HEAD
-=======
-		{D217E226-1EB9-4BF5-AA69-389C943B4D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D217E226-1EB9-4BF5-AA69-389C943B4D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D217E226-1EB9-4BF5-AA69-389C943B4D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D217E226-1EB9-4BF5-AA69-389C943B4D87}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C2D34164-AA1D-46C1-A19D-0DDC43A8F46C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2D34164-AA1D-46C1-A19D-0DDC43A8F46C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2D34164-AA1D-46C1-A19D-0DDC43A8F46C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2D34164-AA1D-46C1-A19D-0DDC43A8F46C}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> 3dfb1289c0537ab2714eeca0a080eb8e49fd9d98
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
