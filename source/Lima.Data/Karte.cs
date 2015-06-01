@@ -27,7 +27,7 @@ namespace Lima.Data
     // Karte
     public class Karte
     {
-        public int Id { get; set; } // Id
+        public int Id { get; set; } // Id (Primary key)
         public string Titel { get; set; } // Titel
         public string Beschreibung { get; set; } // Beschreibung
         public int? SpalteId { get; set; } // SpalteId

@@ -31,7 +31,7 @@ namespace Lima.Data
         public int Id { get; set; } // Id (Primary key)
 
         // Reverse navigation
-        public virtual ICollection<Spalte> Spaltes { get; set; } // Spalte.FK__Spalte__BoardId__1273C1CD
+        public virtual ICollection<Spalte> Spaltes { get; set; } // Spalte.FK__Spalte__BoardId__15502E78
         
         public Board()
         {

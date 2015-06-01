@@ -30,7 +30,7 @@ namespace Lima.Data
         public KarteConfiguration(string schema = "dbo")
         {
             ToTable(schema + ".Karte");
-            HasKey(x => new { x.Id, x.Titel });
+            HasKey(x => x.Id);
 
             Property(x => x.Id).HasColumnName("Id").IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(x => x.Titel).HasColumnName("Titel").IsRequired().HasMaxLength(100);

@@ -36,7 +36,7 @@ namespace Lima.Data
         public virtual ICollection<Karte> Kartes { get; set; } // Karte.FK__Karte__SpalteId__145C0A3F
 
         // Foreign keys
-        public virtual Board Board { get; set; } // FK__Spalte__BoardId__1273C1CD
+        public virtual Board Board { get; set; } // FK__Spalte__BoardId__15502E78
         
         public Spalte()
         {

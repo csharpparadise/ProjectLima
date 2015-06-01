@@ -7,7 +7,7 @@
 // 
 //     Configuration file:     "Lima.Data\App.config"
 //     Connection String Name: "LimaDbContext"
-//     Connection String:      "Data Source=.\sqlexpress; Initial Catalog=ProjectLima;Integrated Security=true"
+//     Connection String:      "Data Source=.\sqlexpress; Initial Catalog=Lima;Integrated Security=true"
 
 // ReSharper disable RedundantUsingDirective
 // ReSharper disable DoNotCallOverridableMethodsInConstructor

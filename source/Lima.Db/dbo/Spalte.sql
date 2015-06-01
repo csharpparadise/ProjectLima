@@ -1,0 +1,6 @@
+﻿CREATE TABLE Spalte(
+	Id int IDENTITY(1,1) NOT NULL,
+	Titel NVARCHAR(100) NOT NULL,
+	PRIMARY KEY (Id),
+	BoardId int FOREIGN KEY REFERENCES Board(Id)
+)

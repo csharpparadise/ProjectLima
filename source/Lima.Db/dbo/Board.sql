@@ -1,0 +1,4 @@
+﻿CREATE TABLE Board(
+	Id int IDENTITY (1,1) NOT NULL,
+	PRIMARY KEY (Id)
+)

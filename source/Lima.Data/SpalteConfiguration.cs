@@ -37,7 +37,7 @@ namespace Lima.Data
             Property(x => x.BoardId).HasColumnName("BoardId").IsOptional();
 
             // Foreign keys
-            HasOptional(a => a.Board).WithMany(b => b.Spaltes).HasForeignKey(c => c.BoardId); // FK__Spalte__BoardId__1273C1CD
+            HasOptional(a => a.Board).WithMany(b => b.Spaltes).HasForeignKey(c => c.BoardId); // FK__Spalte__BoardId__15502E78
         }
     }
 
