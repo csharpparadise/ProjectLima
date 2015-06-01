@@ -7,7 +7,7 @@
     <Name>LimaDb</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{cec717b4-f544-432e-bacf-15dd8ac102e5}</ProjectGuid>
+    <ProjectGuid>{4a0e4989-df21-4617-8b78-71e2a8fd5f0d}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
