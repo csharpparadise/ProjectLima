@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Comparex.Lima.Api")]
+[assembly: AssemblyTitle("Lima.api")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Comparex.Lima.Api")]
+[assembly: AssemblyProduct("Lima.api")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("415a4697-d291-47a8-8288-cde66c65a242")]
+[assembly: Guid("1d275de3-b1da-435a-931e-b33b701a46a3")]
 
 // Version information for an assembly consists of the following four values:
 //
