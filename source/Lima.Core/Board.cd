@@ -11,14 +11,14 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Lima.Core.Karte">
-    <Position X="4" Y="0.5" Width="1.5" />
+    <Position X="6.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>Karte.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Lima.Core.Spalte">
-    <Position X="0.5" Y="3.25" Width="1.5" />
+    <Position X="3.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>Spalte.cs</FileName>
