@@ -16,11 +16,15 @@
     </md-toolbar>
 
 
-    <md-content layout="row" flex layout-padding ng-controller="SpaltenController">
-        <div flex ng-repeat="spalte in spalten">
-            <span>{{spalte.title}}</span>
+    <md-content layout="row" flex layout-padding layout-align="space-around" ng-controller="SpaltenController">
+        <div class="md-whiteframe-z3" ng-repeat="spalte in spalten" layout-padding style="min-width: 100px;">
+            <h1 class="md-display-1">{{spalte.title}}</h1>
             <lima-karte></lima-karte>
         </div>
+    </md-content>
+
+    <md-content layout layout-align="end" layout-padding>
+      <md-button class="md-fab md-accent" style="font-size: 2.2em;">+</md-button>
     </md-content>
 
     <script src="./bower_components/jquery/dist/jquery.min.js"></script>
