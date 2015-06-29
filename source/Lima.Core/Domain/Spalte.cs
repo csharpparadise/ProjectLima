@@ -8,6 +8,8 @@ namespace Lima.Core
         {
             Karten = new List<Karte>();
         }
+
+        public int Id { get; set; }
         public string Titel { get; set; }
         public List<Karte> Karten { get; set; }
     }

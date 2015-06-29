@@ -40,11 +40,13 @@ namespace Lima.Core
             { 
                 Spalten = board.Spaltes.Select(x => new Spalte 
                 { 
+                    Id = x.Id,
                     Titel = x.Titel, 
                     Karten = x.Kartes.Select(k => new Karte
                     {
                         Titel = k.Titel, 
-                        Beschreibung = k.Beschreibung
+                        Beschreibung = k.Beschreibung,
+                        Id = k.Id
                     }).ToList()
                 }).ToList()
             };
