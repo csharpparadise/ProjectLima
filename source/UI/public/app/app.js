@@ -1,17 +1,26 @@
-angular.module('lima', [
-  'ngMaterial',
-  'spalte',
-  'karte'
-]).config(init);
+(function(window, document, undefined) {
+    'use strict';
 
-init.$inject = ["$mdThemingProvider"];
+    angular.module('lima', [
+        'ngMaterial',
+        'ngRoute',
+        'spalte',
+        'karte',
+        'karteDetails'
+    ]).config(init);
 
-function init($mdThemingProvider)
-{
-    // $mdThemingProvider.theme("default")
-    //     .primaryPalette("brown")
-    //     .accentPalette("orange")
-    //     .backgroundPalette("brown")
+    init.$inject = ['$mdThemingProvider', '$routeProvider', '$locationProvider'];
+
+    function init($mdThemingProvider, $routeProvider, $locationProvider) {
+        $locationProvider.html5Mode(true);
+        $routeProvider.otherwise({
+            redirectTo: '/'
+        });
+        // $mdThemingProvider.theme("default")
+        //     .primaryPalette("brown")
+        //     .accentPalette("orange")
+        //     .backgroundPalette("brown")
         //  .dark()
         // ;
-}
+    }
+})(window, document);

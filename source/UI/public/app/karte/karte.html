@@ -1,5 +1,5 @@
 <div layout="column">
-    <md-button class="md-raised" flex ng-repeat="karte in karten">
+    <md-button class="md-raised" flex ng-repeat="karte in karten" ng-click='openKarte(karte)'>
         <span>{{karte.title}}</span>
     </md-button>
 </div>
