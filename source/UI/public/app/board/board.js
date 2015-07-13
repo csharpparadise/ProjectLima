@@ -6,27 +6,36 @@
         .config(defineRoutes);
 
     BoardController.$inject = ['$scope', 'boardService'];
+    boardService.$inject = ['$http', '$q'];
 
-    function BoardController($scope, boardService) {
-        $scope.spalten = boardService.getData();
+    function BoardController($scope, boardService)
+    {
+        console.log('Hallo?!');
+
+        boardService.getData().then(function(spalten)
+        {
+            console.log(spalten);
+            $scope.spalten = spalten;
+        });
     }
 
-    function boardService() {
+    function boardService($http, $q) {
         var result = {};
 
-        result.getData = function() {
-            var spalten = [];
+        result.getData = function()
+        {
+            var deferred = $q.defer();
+            $http.get('http://localhost:51111/board')
+                .success(function (spalten)
+                {
+                    deferred.resolve(spalten);
+                })
+                .error(function ()
+                {
+                    deferred.reject();
+                });
 
-            spalten.push({
-                id: 0,
-                title: 'Spalte 1'
-            });
-            spalten.push({
-                id: 1,
-                title: 'Spalte 2'
-            });
-
-            return spalten;
+            return deferred.promise;
         };
 
         return result;
@@ -39,6 +48,5 @@
             controller: 'BoardController'
         });
     }
-
 
 }());
