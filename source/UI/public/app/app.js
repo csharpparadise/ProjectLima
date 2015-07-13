@@ -4,6 +4,7 @@
     angular.module('lima', [
         'ngMaterial',
         'ngRoute',
+        'board',
         'spalte',
         'karte',
         'karteDetails'
