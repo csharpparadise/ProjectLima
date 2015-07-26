@@ -1,9 +1,7 @@
 'use strict';
 
-module.exports = function(config)
-{
-    config.set(
-    {
+module.exports = function(config) {
+    config.set({
 
         // base path, that will be used to resolve files and exclude
         basePath: 'public',
@@ -23,8 +21,7 @@ module.exports = function(config)
         ],
 
         // preprocessors for files
-        preprocessors:
-        {
+        preprocessors: {
             'app/**/!(*spec)*.js': 'coverage',
             'app/**/*.html': 'ng-html2js'
         },
@@ -36,20 +33,25 @@ module.exports = function(config)
 
 
         // test results reporter to use
-        // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
-        reporters: ['mocha', 'junit', 'coverage'],
+        // possible values: 'mocha', 'html', 'dots', 'progress', 'junit', 'growl', 'coverage'
+        reporters: ['mocha', 'html', 'junit', 'coverage'],
 
         // configure coverage reporter
-        coverageReporter:
-        {
-            reporters: [
-            {
+        coverageReporter: {
+            reporters: [{
                 type: 'html',
                 dir: 'coverage/'
-            },
-            {
+            }, {
                 type: 'cobertura'
             }]
+        },
+
+        htmlReporter: {
+            outputFile: 'test-results.html',
+
+            // Optional
+            pageTitle: 'Unit Tests',
+            subPageTitle: 'Project Lima'
         },
 
         // web server port
