@@ -38,6 +38,10 @@ TestResult.xml
 [Rr]eleasePS/
 dlldata.c
 
+#Karma test and coverage results
+coverage/
+test-results.xml
+
 *_i.c
 *_p.c
 *_i.h

@@ -1,21 +1,21 @@
 {
-  "name": "Lima",
-  "main": "server.js",
-  "version": "0.0.1",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "jquery": "1.11.2",
-    "angular": "~1.4.0",
-    "angular-material": "~0.9.6",
-    "angular-route": "~1.4.1"
-  },
-  "resolutions": {
-    "angular": "1.4.1"
-  }
+    "name": "Lima",
+    "main": "server.js",
+    "version": "0.0.1",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "1.3.15",
+        "angular-material": "0.9.6",
+        "angular-route": "1.3.15",
+        "angular-mocks": "1.3.15"
+    },
+    "resolutions": {
+        "angular": "1.3.15"
+    }
 }
