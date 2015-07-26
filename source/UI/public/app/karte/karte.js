@@ -20,8 +20,6 @@
 
     function KartenController($scope, $location) {
         $scope.openKarte = function(karte) {
-
-            if (karte && karte.id)
             $location.path('/karte/' + karte.id);
         };
     }
