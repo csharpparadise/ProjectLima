@@ -7,11 +7,10 @@
 
     BoardController.$inject = ['$scope', 'boardService'];
     boardService.$inject = ['$http', '$q'];
+    defineRoutes.$inject = ['$routeProvider'];
 
     function BoardController($scope, boardService)
     {
-        console.log('Hallo?!');
-
         boardService.getData().then(function(spalten)
         {
             console.log(spalten);
@@ -25,7 +24,7 @@
         result.getData = function()
         {
             var deferred = $q.defer();
-            $http.get('http://localhost:51111/board')
+            $http.get('http://lima-service.azurewebsites.net/board')
                 .success(function (spalten)
                 {
                     deferred.resolve(spalten);
@@ -41,7 +40,6 @@
         return result;
     }
 
-    defineRoutes.$inject = ['$routeProvider'];
     function defineRoutes($routeProvider) {
         $routeProvider.when('/', {
             templateUrl: 'app/board/board.html',

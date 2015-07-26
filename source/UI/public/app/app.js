@@ -4,10 +4,7 @@
     angular.module('lima', [
         'ngMaterial',
         'ngRoute',
-        'board',
-        'spalte',
-        'karte',
-        'karteDetails'
+        'board'
     ]).config(init);
 
     init.$inject = ['$mdThemingProvider', '$routeProvider', '$locationProvider'];

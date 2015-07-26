@@ -1,16 +1,15 @@
 (function() {
     'use strict';
-    angular.module('spalte', [])
+    angular.module('spalte', ['karte'])
         .directive('limaSpalte', limaSpalte)
         .controller('SpaltenController', SpaltenController);
 
-    function SpaltenController($scope) {
-    }
+    function SpaltenController() {}
 
     function limaSpalte() {
         return {
             scope: {
-              spalte: '=spalte'
+                spalte: '=spalte'
             },
             restrict: 'AE',
             templateUrl: 'app/spalte/spalte.html',

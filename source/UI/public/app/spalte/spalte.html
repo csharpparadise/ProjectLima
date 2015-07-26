@@ -1,3 +1,6 @@
 <div class="md-whiteframe-z3" layout-padding style="min-width: 100px;">
-  <h1 class="md-display-1">{{spalte.title}}</h1>
+    <h1 class="md-display-1">{{spalte.title}}</h1>
+    <div layout="column">
+        <lima-karte ng-repeat="(key, karte) in spalte.karten" karte='karte'></lima-karte>
+    </div>
 </div>

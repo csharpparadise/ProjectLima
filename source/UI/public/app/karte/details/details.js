@@ -1,7 +1,7 @@
 (function(window, document, undefined) {
     'use strict';
 
-    angular.module('karteDetails', ['karte'])
+    angular.module('karte.details', ['kartenService'])
         .controller('DetailsController', DetailsController)
         .config(defineRoutes);
 
