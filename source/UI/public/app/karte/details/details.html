@@ -1,4 +1,25 @@
-<div>
-  <h2>{{karte.title}}</h2>
-  <p>{{karte.description}}</p>
-</div>
+<view-edit>
+
+  <h1>Test</h1>
+
+</view-edit>
+
+<form name="cardEdit" ng-submit="changeCard()" novalidate>
+    <div>
+        <h2 class="editable" ng-hide="editing.title" ng-click="editing.title = true">{{karte.title}}</h2>
+        <p ng-show="editing.title">
+            <!--Titel soll mindest 5 Zeichen enthalten-->
+            <label for="title">Titel</label>
+            <input id="title" name="title" type="text"
+             ng-minlength="5"
+             ng-model="karte.title" required>
+        </p>
+
+        <p class="editable" ng-hide="editing.text" ng-click="editing.text = true">{{karte.text}}</p>
+        <p ng-show="editing.text">
+            <label for="text">Beschreibung</label>
+            <input id="text" name="text" type="text" ng-model="karte.text" required>
+        </p>
+        <md-button type="submit" ng-disabled="cardEdit.$invalid">Ändern</md-button>
+    </div>
+</form>

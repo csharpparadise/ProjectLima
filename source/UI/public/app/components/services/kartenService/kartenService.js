@@ -12,7 +12,21 @@
         result.getKarteById = function(id) {
 
             var deferred = $q.defer();
-            $http.get('http://lima-service.azurewebsites.net/karte/' + id)
+            $http.get('http://localhost:49000/karte/' + id)
+                .success(function(karte) {
+                    deferred.resolve(karte);
+                })
+                .error(function() {
+                    deferred.reject();
+                });
+
+            return deferred.promise;
+        };
+
+        result.saveKarte = function(karte) {
+            console.log(karte);
+            var deferred = $q.defer();
+            $http.post('http://localhost:49000/karte/' + karte.id, karte)
                 .success(function(karte) {
                     deferred.resolve(karte);
                 })

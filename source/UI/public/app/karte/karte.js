@@ -20,7 +20,7 @@
 
     function KartenController($scope, $location) {
         $scope.openKarte = function(karte) {
-            $location.path('/karte/' + karte.id);
+            $location.path('/app/karte/' + karte.id);
         };
     }
 

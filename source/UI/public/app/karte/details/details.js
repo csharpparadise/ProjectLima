@@ -9,13 +9,17 @@
     DetailsController.$inject = ['$scope', '$routeParams', 'kartenService'];
 
     function defineRoutes($routeProvider) {
-        $routeProvider.when('/karte/:karteId', {
+        $routeProvider.when('/app/karte/:karteId', {
             templateUrl: 'app/karte/details/details.html',
             controller: 'DetailsController'
         });
     }
 
     function DetailsController($scope, $routeParams, kartenService) {
+
+        $scope.changeCard = function() {
+          kartenService.saveKarte($scope.karte);
+        };
 
         function loadKarteDetails(id) {
             kartenService.getKarteById(id)

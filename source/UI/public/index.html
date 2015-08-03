@@ -2,9 +2,15 @@
 <html>
 
 <head>
-    <base href="/">
+    <base href="/app">
     <title>Lima</title>
     <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css">
+
+    <style>
+    .editable{
+      cursor: pointer;
+    }
+    </style>
 </head>
 
 <body ng-app="lima" layout="column">
@@ -27,6 +33,7 @@
     <script src="./bower_components/angular-material/angular-material.min.js"></script>
     <script src="./bower_components/angular-route/angular-route.js"></script>
     <script src="app/components/services/kartenService/kartenService.js"></script>
+    <script src="app/components/input-controls/viewEdit/viewEdit.js"></script>
     <script src="app/karte/details/details.js"></script>
     <script src="app/karte/karte.js"></script>
     <script src="app/spalte/spalte.js"></script>

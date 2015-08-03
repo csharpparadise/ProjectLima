@@ -24,7 +24,7 @@
         result.getData = function()
         {
             var deferred = $q.defer();
-            $http.get('http://lima-service.azurewebsites.net/board')
+            $http.get('http://localhost:49000/board')
                 .success(function (spalten)
                 {
                     deferred.resolve(spalten);
@@ -41,7 +41,7 @@
     }
 
     function defineRoutes($routeProvider) {
-        $routeProvider.when('/', {
+        $routeProvider.when('/app', {
             templateUrl: 'app/board/board.html',
             controller: 'BoardController'
         });

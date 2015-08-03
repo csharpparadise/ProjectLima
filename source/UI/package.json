@@ -2,7 +2,8 @@
     "name": "Lima",
     "version": "0.0.1",
     "dependencies": {
-        "express": "~4.12.3"
+        "express": "~4.12.3",
+        "body-parser": "~1.13.2"
     },
     "devDependencies": {
         "karma": "0.12.22",
