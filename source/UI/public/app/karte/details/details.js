@@ -18,7 +18,7 @@
     function DetailsController($scope, $routeParams, kartenService) {
 
         $scope.changeCard = function() {
-          kartenService.saveKarte($scope.karte);
+            kartenService.saveKarte($scope.karte);
         };
 
         function loadKarteDetails(id) {
