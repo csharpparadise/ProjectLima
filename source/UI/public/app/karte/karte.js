@@ -18,9 +18,15 @@
         };
     }
 
+    
+
     function KartenController($scope, $location) {
-        $scope.openKarte = function(karte) {
-            $location.path('/app/karte/' + karte.id);
+        $scope.dummyValueForTesting = 42;
+
+        $scope.openKarte = function (karte) {
+            if (karte && karte.id) {
+                $location.path('/app/karte/' + karte.id);
+            }
         };
     }
 
