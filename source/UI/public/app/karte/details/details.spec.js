@@ -44,7 +44,7 @@ describe('karte.details', function () {
 
 
     describe("loadKarteDetails", function () {
-        it("Sollte mit KartenId 5 KarteId nicht setzen", function () {
+        it("Sollte mit KartenId 5 KarteId NICHT setzen", function () {
 
             //$routeParams.karteId = 5;
             controllerFactory();
