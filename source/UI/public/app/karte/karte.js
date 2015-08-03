@@ -19,8 +19,11 @@
     }
 
     function KartenController($scope, $location) {
+        $scope.dummyValueForTesting = 42;
+
         $scope.openKarte = function(karte) {
-            $location.path('/app/karte/' + karte.id);
+            if (karte && karte.id)
+                $location.path('/app/karte/' + karte.id);
         };
     }
 

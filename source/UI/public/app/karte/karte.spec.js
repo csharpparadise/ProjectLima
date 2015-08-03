@@ -33,12 +33,12 @@ describe('karte', function() {
 
 
     describe('openKarte', function() {
-        it('should change location to /karte/:id', function() {
+        it('should change location to /app/karte/:id', function() {
             spyOn($location, 'path');
             $scope.openKarte({
                 id: 42
             });
-            expect($location.path).toHaveBeenCalledWith('/karte/42');
+            expect($location.path).toHaveBeenCalledWith('/app/karte/42');
         });
         it('should not change location if no karte with an id is given', function() {
             spyOn($location, 'path');
