@@ -42,13 +42,15 @@ describe('karte/details', function() {
         })
 
         it('should have karte after init', function() {
+            $routeParams.karteId = 42;
+
             // var deferred = $q.defer();
             // spyOn(kartenService, 'getKarteById').and.returnValue(deferred.promise);
             // deferred.resolve(21);
 
             spyOn(kartenService, 'getKarteById').and.callFake(function(id) {
                 var deferred = $q.defer();
-                deferred.resolve(21);
+                deferred.resolve(id);
                 return deferred.promise;
             });
 
@@ -56,7 +58,7 @@ describe('karte/details', function() {
             createCrtl();
             $scope.$digest();
             expect($scope.karte).toBeDefined();
-            expect($scope.karte).toBe(21);
+            expect($scope.karte).toBe($routeParams.karteId);
         })
     });
 })
